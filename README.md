@@ -9,9 +9,4 @@ problem.
 
 | File | PDF Version | TeX Version
 | ------ | ----------- | ----------- |
-| Attachment List | [PDF](https://raw.githubusercontent.com/sbissantz/smip_application/master/attachment_list/attachment_list.pdf) | [TeX](https://raw.githubusercontent.com/sbissantz/smip_application/master/attachment_list/attachment_list.tex) |
-| Curriculum Vitae | [PDF](https://raw.githubusercontent.com/sbissantz/smip_application/master/curriculum_vitae/curriculum_vitae.pdf) | [TeX](https://raw.githubusercontent.com/sbissantz/smip_application/master/curriculum_vitae/curriculum_vitae.tex) |
-| Letter of Motivation | [PDF](https://raw.githubusercontent.com/sbissantz/smip_application/master/motivation_letter/motivation_letter.pdf) | [TeX](https://raw.githubusercontent.com/sbissantz/smip_application/master/motivation_letter/motivation_letter.tex)|
-Writing Sample | [PDF](https://raw.githubusercontent.com/sbissantz/smip_application/master/writing_sample/writing_sample.pdf) | [TeX](https://raw.githubusercontent.com/sbissantz/smip_application/master/writing_sample/writing_sample.tex) |
-
-
+| Presentation | [PDF](https://raw.githubusercontent.com/sbissantz/smip_retreat_22/master/retreat22.pdf) | [TeX](https://raw.githubusercontent.com/sbissantz/smip_retreat_22/master/retreat22.tex) |
