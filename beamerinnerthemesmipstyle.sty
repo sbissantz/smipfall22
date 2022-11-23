@@ -1,0 +1,72 @@
+\mode<presentation>
+
+\setbeamertemplate{itemize item}{\textcolor{black}{$\bullet$}}
+\setbeamertemplate{itemize subitem}{\textcolor{black}{$-$}}
+\setbeamertemplate{itemize subsubitem}{\textcolor{black}{$\bullet$}}
+
+\setbeamertemplate{headline}{}
+\setbeamertemplate{frametitle}[default][center]
+\addtobeamertemplate{frametitle}{}{%
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=south east,yshift=13pt] at (current page.south east) {\includegraphics[height=1cm]{subfiles/logo_reduced.eps}};
+\end{tikzpicture}}
+
+\setbeamertemplate{footline}
+{
+    \ifnum \insertpagenumber=1
+      \leavevmode%
+      \hbox{%
+      \begin{beamercolorbox}[wd=\paperwidth,ht=30ex,dp=7ex,right, rightskip = 10ex]{title in head/foot}%
+        \includegraphics[width=5.5cm]{subfiles/Logo_full_sw.png}
+      \end{beamercolorbox}}%
+      \vskip0pt%
+    \else
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.005\paperwidth,ht=4ex,dp=2.5ex,center]{}%
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.06\paperwidth,ht=4ex,dp=2ex,center]{palette tertiary}%
+     \large\insertframenumber{}\vspace{-1.7px}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.005\paperwidth,ht=4ex,dp=2ex,center]{}%
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.925\paperwidth, ht=4ex, dp=2ex, left, leftskip = 2.5ex plus1fil]{palette secondary}% 
+  	\insertshortdate{} \newline 
+  	\insertshortauthor, \insertshortinstitute\vspace{-3.7px}
+  \end{beamercolorbox}}%
+  \begin{beamercolorbox}[wd=.005\paperwidth,ht=4ex,dp=2ex,center]{}%
+  \end{beamercolorbox}%
+  \vskip0pt%
+  \fi
+}
+
+\setbeamertemplate{title page}{%
+\begin{tikzpicture}[remember picture,overlay]
+\fill[smipblue]
+  ([yshift=-20pt]current page.west) rectangle (current page.south east);
+\node[anchor = west]
+  at ([yshift=-25pt, xshift=10pt]current page.north west) (logo)
+  {\parbox[t]{.1\paperwidth}{
+    \usebeamercolor[fg]{titlegraphic}\inserttitlegraphic}};
+\node[anchor=west] 
+  at ([yshift=-90pt, xshift=10pt]current page.north west) (title)
+  {\parbox[t]{.8\paperwidth}{\raggedright%
+    \usebeamerfont{title}\textcolor{smipblue}{%
+    {\inserttitle}}}};
+ \node[anchor=west]
+  at ([yshift=-110pt, xshift=10pt]current page.north west) (subtitle)
+  {\parbox[t]{.8\paperwidth}{\usebeamerfont{subtitle}\textcolor{smipblue}{\insertsubtitle}}};
+ \node[anchor=west]
+  at ([yshift=-130pt, xshift=10pt]current page.north west) (author)
+  {\parbox[t]{.8\paperwidth}{\usebeamerfont{author}\textcolor{smipgray}{\insertauthor,\ \insertinstitute}}};
+ \node[anchor=west]
+  at ([yshift=-145pt, xshift=10pt]current page.north west) (occasion)
+  {\parbox[t]{.8\paperwidth}{\usebeamerfont{date}\textcolor{smipgray}{\insertdate}}};
+  \node[anchor=west] (whitehead) 
+  at ([yshift=-60pt, xshift=245]current page.north west) (logo)
+    {\includegraphics[width=.25\textwidth]{subfiles/avatar3.jpg}};
+\end{tikzpicture}
+}
+
+\mode 
+<all>
