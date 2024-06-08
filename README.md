@@ -1,4 +1,4 @@
-# smip_retreat_22
+# smipfall_22
 
 Welcome to my repository! Glad to have you here. The repository contains all
 the necessary code to reproduce my SMiP presentation for the fall retreat
